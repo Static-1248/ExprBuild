@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "ES2022",
+    "baseUrl": ".",
+    "paths": {
+      "@exprbuild/core": ["./packages/core/src"],
+      "@exprbuild/dev": ["./packages/dev/src"],
+      "@exprbuild/vscode": ["./packages/vscode/src"]
+    }
+  }
+}

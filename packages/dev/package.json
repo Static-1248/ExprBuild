@@ -1,0 +1,23 @@
+{
+  "name": "@exprbuild/dev",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs --dts",
+    "dev": "tsup src/index.ts --format cjs --dts --watch",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@exprbuild/core": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.6",
+    "vite": "^5.1.4",
+    "vitest": "^3.0.5",
+    "@types/node": "^20.17.17"
+  },
+  "peerDependencies": {
+    "vite": "^5.0.0"
+  }
+}

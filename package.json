@@ -1,22 +1,22 @@
 {
   "name": "exprbuild",
-  "version": "1.0.0",
-  "main": "src/index.ts",
-  "bin": {
-    "exprbuild": "src/devserver.js"
-  },
   "scripts": {
-    "build": "tsc"
+    "preinstall": "npx only-allow pnpm",
+    "build": "pnpm --filter \"./packages/*\" run build",
+    "dev": "pnpm --filter @exprbuild/dev dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "exports": {
+    ".": "@exprbuild/core",
+    "./dev": "@exprbuild/dev",
+    "./vscode": "@exprbuild/vscode"
+  },
   "devDependencies": {
-    "typescript": "^5.6.3"
+    "@types/node": "^20.17.17",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
   },
-  "dependencies": {
-    "@types/desmos": "^1.6.3",
-    "ts-node": "^10.9.2"
-  }
+  "private": true,
+  "packageManager": "pnpm@8.15.3"
 }

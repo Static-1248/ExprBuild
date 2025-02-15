@@ -1,4 +1,3 @@
-**Idea: Imitate the system in Logimat.**
 
 
 **This version concerns about how to use Tagged Template Literals to build expressions, with types deducable.**
