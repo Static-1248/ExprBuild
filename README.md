@@ -2,7 +2,7 @@
 
 update:
 
-正在尝试Julia技术路线，见 [https://github.com/Static-1248/ExprBuild-Julia](https://github.com/Static-1248/ExprBuild-Julia)
+正在尝试Julia技术路线，已转至 [https://github.com/Static-1248/ExprBuild-Julia](https://github.com/Static-1248/ExprBuild-Julia)
 
 ---
 
